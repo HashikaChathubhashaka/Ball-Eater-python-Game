@@ -1,1 +1,2 @@
-#Simple Python game made using Tkinter 
+# BALL EATER
+Simple Python game made using Tkinter 
