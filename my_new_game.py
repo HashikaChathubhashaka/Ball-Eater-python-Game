@@ -68,6 +68,8 @@ class Eatable_Ball():
 
 def move_ball():
     global score
+    global BALL_RADIUS
+
     x, y = ball.current_coordinate
 
     if keys_pressed.get('Up') and keys_pressed.get('Left'):
@@ -112,7 +114,9 @@ def move_ball():
             score +=1
             canvas.delete(eatable_ball.canvas_items[x])
             eatable_ball.eatable_balls[x] = (1000,1000)
-            #eatable_ball.update_balls()
+
+
+    BALL_RADIUS = 20 + (score//5)
 
 
 
